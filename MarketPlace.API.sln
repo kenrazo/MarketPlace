@@ -16,6 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\workflows\marketplace.yml = .github\workflows\marketplace.yml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8B61536-EE59-4E56-9E3C-823664F3A2CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Domain.Tests", "MarketPlace.Domain.Tests\MarketPlace.Domain.Tests.csproj", "{4571B62A-01AF-4027-AAD1-FF8542F8EE57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,9 +42,16 @@ Global
 		{88925B0C-DCEC-430A-AB40-739205DCECE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88925B0C-DCEC-430A-AB40-739205DCECE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88925B0C-DCEC-430A-AB40-739205DCECE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4571B62A-01AF-4027-AAD1-FF8542F8EE57} = {B8B61536-EE59-4E56-9E3C-823664F3A2CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF971C37-38E0-45F4-80BA-AA8A70960823}
