@@ -5,11 +5,11 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.API", "Src\MarketPlace.API\MarketPlace.API.csproj", "{2E0AC631-B951-4FDA-858D-387880D72C01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Infrastructure.MongoDb", "Src\MarketPlace.Infrastructure.MongoDb\MarketPlace.Infrastructure.MongoDb.csproj", "{E490D23A-375A-46C6-A2A7-20A80042FDDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Infrastructure.MongoDb", "Src\MarketPlace.Infrastructure.MongoDb\MarketPlace.Infrastructure.MongoDb.csproj", "{E490D23A-375A-46C6-A2A7-20A80042FDDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Domain", "Src\MarketPlace.Domain\MarketPlace.Domain.csproj", "{115F36EE-3502-487E-A15A-5069452B8CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Domain", "Src\MarketPlace.Domain\MarketPlace.Domain.csproj", "{115F36EE-3502-487E-A15A-5069452B8CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Application", "MarketPlace.Application\MarketPlace.Application.csproj", "{88925B0C-DCEC-430A-AB40-739205DCECE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Application", "MarketPlace.Application\MarketPlace.Application.csproj", "{88925B0C-DCEC-430A-AB40-739205DCECE1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4EEA69AD-1044-43AD-8BD9-A0D1003CFCDF}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8B61536-EE59-4E56-9E3C-823664F3A2CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.Domain.Tests", "MarketPlace.Domain.Tests\MarketPlace.Domain.Tests.csproj", "{4571B62A-01AF-4027-AAD1-FF8542F8EE57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Domain.Tests", "MarketPlace.Domain.Tests\MarketPlace.Domain.Tests.csproj", "{4571B62A-01AF-4027-AAD1-FF8542F8EE57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.SharedKernel", "MarketPlace.SharedKernel\MarketPlace.SharedKernel.csproj", "{49BB3E91-F6FC-4EA9-8587-A48C38821576}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4571B62A-01AF-4027-AAD1-FF8542F8EE57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49BB3E91-F6FC-4EA9-8587-A48C38821576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49BB3E91-F6FC-4EA9-8587-A48C38821576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49BB3E91-F6FC-4EA9-8587-A48C38821576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49BB3E91-F6FC-4EA9-8587-A48C38821576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
