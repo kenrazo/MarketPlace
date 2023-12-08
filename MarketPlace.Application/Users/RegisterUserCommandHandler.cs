@@ -13,11 +13,13 @@ namespace MarketPlace.Application.Users
         private readonly IUserRepository _userRepository;
         private readonly IUnitOfWork _unitOfWork;
 
-        public RegisterUserCommandHandler(IAuthenticationService authenticationService, IUserRepository userRepository, IUnitOfWork unitOfWork)
+        public RegisterUserCommandHandler(IAuthenticationService authenticationService,
+            IUserRepository userRepository,
+            IUnitOfWork unitOfWork)
         {
-            Guard.Against.Null(_authenticationService, nameof(_authenticationService));
-            Guard.Against.Null(_userRepository, nameof(_userRepository));
-            Guard.Against.Null(_unitOfWork, nameof(_unitOfWork));
+            Guard.Against.Null(authenticationService, nameof(authenticationService));
+            Guard.Against.Null(userRepository, nameof(userRepository));
+            Guard.Against.Null(unitOfWork, nameof(unitOfWork));
 
             _authenticationService = authenticationService;
             _userRepository = userRepository;
@@ -34,6 +36,11 @@ namespace MarketPlace.Application.Users
             try
             {
                 var identityId = await _authenticationService.RegisterAsync(user, request.Password, cancellationToken);
+
+                if (string.IsNullOrEmpty(identityId))
+                {
+                    return Result.Failure<Guid>(UserErrors.IdentityIdNotSaved);
+                }
 
                 user.SetIdentityId(identityId);
 

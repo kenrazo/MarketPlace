@@ -13,6 +13,7 @@ namespace MarketPlace.Domain.Users
 
         private User(UserId userId, FirstName firstName, LastName lastName, Email email, MobileNumber mobileNumber)
         {
+            Id = userId;
             FirstName = firstName;
             LastName = lastName;
             Email = email;
