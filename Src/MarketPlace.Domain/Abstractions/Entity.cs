@@ -21,5 +21,10 @@ namespace MarketPlace.Domain.Abstractions
         {
             return _domainEvents.ToList();
         }
+
+        protected void RaiseDomainEvent(IDomainEvent ev)
+        {
+            _domainEvents.Add(ev);
+        }
     }
 }

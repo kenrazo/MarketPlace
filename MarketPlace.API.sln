@@ -20,7 +20,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8B61536
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.Domain.Tests", "MarketPlace.Domain.Tests\MarketPlace.Domain.Tests.csproj", "{4571B62A-01AF-4027-AAD1-FF8542F8EE57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPlace.SharedKernel", "MarketPlace.SharedKernel\MarketPlace.SharedKernel.csproj", "{49BB3E91-F6FC-4EA9-8587-A48C38821576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPlace.SharedKernel", "MarketPlace.SharedKernel\MarketPlace.SharedKernel.csproj", "{49BB3E91-F6FC-4EA9-8587-A48C38821576}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

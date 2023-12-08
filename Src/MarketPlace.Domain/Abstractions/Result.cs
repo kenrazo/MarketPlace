@@ -11,7 +11,7 @@ namespace MarketPlace.Domain.Abstractions
                 throw new InvalidCastException();
             }
 
-            if (!IsSuccess && error == Error.None)
+            if (!isSucces && error == Error.None)
             {
                 throw new InvalidCastException();
             }
