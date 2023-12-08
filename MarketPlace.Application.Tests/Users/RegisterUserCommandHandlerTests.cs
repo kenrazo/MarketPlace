@@ -27,17 +27,17 @@ namespace MarketPlace.Application.Tests.Users
         [Fact]
         public async Task Handle_Should_ReturnIsFailureTrue_WhenIdentityIdIsNullOrEmpty()
         {
-            //var request = new RegisterUserCommand("email@gmail.com", "first",
-            //    "last", "mobile", "password");
+            var request = new RegisterUserCommand("email@gmail.com", "first",
+                "last", "mobile", "password");
 
 
-            //_authenticationService.RegisterAsync(Arg.Any<User>(), Arg.Any<string>())
-            //    .Returns(string.Empty);
+            _authenticationService.RegisterAsync(Arg.Any<User>(), Arg.Any<string>())
+                .Returns(string.Empty);
 
-            //var result = await _registerCommandHandler.Handle(request, Arg.Any<CancellationToken>());
+            var result = await _registerCommandHandler.Handle(request, Arg.Any<CancellationToken>());
 
-            //result.IsFailure.Should().BeTrue();
-            //result.Error.Should().Be(UserErrors.IdentityIdNotSaved);
+            result.IsFailure.Should().BeTrue();
+            result.Error.Should().Be(UserErrors.IdentityIdNotSaved);
 
         }
 
