@@ -3,7 +3,7 @@ using MarketPlace.Infrastructure.MongoDb.Entities;
 using MongoDB.Driver;
 using System.Linq.Expressions;
 
-namespace MarketPlace.Infrastructure.MongoDb
+namespace MarketPlace.Infrastructure.MongoDb.Repositories
 {
     public abstract class BaseRepository<TEntity> : IRepositoryBase<TEntity>
         where TEntity : RootEntity<TEntity>
