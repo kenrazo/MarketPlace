@@ -24,6 +24,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore "./Src/MarketPlace.API/./MarketPlace.API.csproj"
     - name: Build
-      run: dotnet build "./Src/MarketPlace.API/./MarketPlace.API.csproj" -c $BUILD_CONFIGURATION -o /app/build --no-restore
+      run: dotnet build "./Src/MarketPlace.API/./MarketPlace.API.csproj" -c $BUILD_CONFIGURATION -o --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
