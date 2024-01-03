@@ -26,4 +26,4 @@ jobs:
     - name: Build
       run: dotnet build "./Src/MarketPlace.API/./MarketPlace.API.csproj" -c $BUILD_CONFIGURATION -o --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test "./Src/MarketPlace.API/./MarketPlace.API.csproj" --no-build --verbosity normal
